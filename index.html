@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Currency Converter</div>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contactUs">Contact Us</a></li>
+        </ul>
+
+    </nav>
+    <div class="container">
+        <h1>Choose a Currency to Convert</h1>
+        <form action="/action.php" method="get"> 
+            <label for="Currency">Choose a quantity:</label>
+            <input type="number" name="quantity" min="1" max="10" />
+            <label for="Currency">Choose Currency to Convert:</label>
+            <select name="Currency" >
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+                <option value="EUR">EUR</option>
+            </select> 
+            
+            <label for="Currency2">Choose Currency to be converted into:</label>
+            <select name="Currency2" >
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+                <option value="EUR">EUR</option>
+            </select> 
+            <label for="Currency2">converted value:</label>
+            <input type="number" name="quantity2" min="1" max="10" />
+           
+            <button type="submit " class="btn">submit</button>
+        </form>
+    <div class="output">
+        <table>
+            <h2>Here is your converted values in different Currency</h2>
+           
+            <thead>
+                <tr>
+                    <th>Currency</th>
+                    <th >Currency Code </th>
+                    <th >value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>Data1</td>
+                    <td>Data2</td>
+                    <td>Data2</td>
+                </tr > -->
+            </tbody>
+            
+        </table>
+    </div> </div>
+    <footer>Copyright &copy; All rights reserved</footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
